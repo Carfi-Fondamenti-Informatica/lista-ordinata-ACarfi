@@ -13,7 +13,7 @@ int main() {
 
     for(int i=0;i<10;i++){
         if(a < lista[i]){
-            for(int j=10;j>i;j--){
+            for(int j=9;j>i;j--){
                 lista[j] = lista[j-1];
             }
             lista[i] = a;
