@@ -2,5 +2,28 @@
 using namespace std;
 
 int main() {
-   return 0;
+    int lista[10];
+
+    for(int i=0;i<10;i++){
+        cin >> lista[i];
+    }
+
+    int a=0;
+    cin >> a;
+
+    for(int i=0;i<10;i++){
+        if(a < lista[i]){
+            for(int j=10;j>i;j--){
+                lista[j] = lista[j-1];
+            }
+            lista[i] = a;
+            break;
+        }
+    }
+
+    for(int i=0;i<10;i++){
+        cout << lista[i] << " ";
+    }
+    cout <<endl;
+    return 0;
 }
