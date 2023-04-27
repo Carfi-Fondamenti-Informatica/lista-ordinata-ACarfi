@@ -24,6 +24,5 @@ int main() {
     for(int i=0;i<10;i++){
         cout << lista[i] << " ";
     }
-    cout <<endl;
     return 0;
 }
